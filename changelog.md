@@ -1,9 +1,13 @@
 # Changelog
 
+## v2.2 (X2 Structure + Y2 Source Map)
+* Removed notebook IDs from the structure presentation (`X2`), bumping `X` from `1` to `2` while keeping `Y` at `2`.
+* Added `v2.2.md` alongside `v1.2.md` to preserve the previous version snapshot.
+
 ## v1.2 (X1 Structure + Y2 Source Map)
 * Established unified single-file map (`v1.2.md`) combining Structure (`X1`) and Source Mapping (`Y2`).
 * Standardized notebook titles (`--Structure`, `--DCS-Master`, `Dcs-Jets`, `Dcs-Rotary`, `Dcs-Warbirds`, `--3DPrinting-Master`, `3DPrinting-Projectx`, `--Trading-Master`, `--Content-Master`, `Content-projectx`, `--Personal-Master`, `Eve Online`, `Farm Sim 25`).
-* **Source-to-`[tag]` Mapping Rule:** Sources reside in each notebook's collective pool and are paired with `[tag]` categories to scope source selection inside dedicated `[tag]` chats and prevent cross-contamination[cite: 1]. `[430] DCS NS 430 Manual EN` is treated as a shared navigation source mapped only to compatible rotary modules (`[hind]`, `[hip]`, `[huey]`, `[gazelle]`).
+* **Source-to-`[tag]` Mapping Rule:** Sources reside in each notebook's collective pool and are paired with `[tag]` categories to scope source selection inside dedicated `[tag]` chats and prevent cross-contamination. `[430] DCS NS 430 Manual EN` is treated as a shared navigation source mapped only to compatible rotary modules (`[hind]`, `[hip]`, `[huey]`, `[gazelle]`).
 * **Completed `Dcs-Rotary` Source Inventory (24 sources):**
   * **Shared / Collective:** `DCS World Helicopter Modules Breakdown` (chat), `[430] DCS NS 430 Manual EN` (scoped to `[hind]`, `[hip]`, `[huey]`, `[gazelle]`)
   * **`[apache]`:** `[Apache] Chuck's Guides - DCS AH-64D Apache Guide PDF`, `[Apache] DCS: AH-64D Flight Manual EN`, `[Apache]` (chat)
