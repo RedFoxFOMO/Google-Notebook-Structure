@@ -1,14 +1,19 @@
-# Changelog
+## Changelog
 
-## v3.2 (X3 Structure + Y2 Source Map)
-- Added rolling `current.md` file in the repository root, overwritten on every new version push alongside immutable `vX.Y.md` snapshots and append-only `changelog.md` entries (`X` bumped from `2` to `3`, `Y` kept at `2`).
-- Added `v3.2.md` preserving the `v2.2` structure, tag definitions, and `Y2` source map.
+### v4.3 (X4 Structure + Y3 Source Map)
+- **Structure (`X3` -> `X4`):** Added `[mig15]` (MiG-15bis) and `[F-5E]` (F-5E Tiger II) tags under `Dcs-Jets`, expanded `[a10]` scope to cover A-10A and A-10C Thunderbolt II, and defined `[Map]` carrier operations placement for `DCS_Supercarrier_Operations_Guide_EN.pdf`.
+- **Source Map (`Y2` -> `Y3`):** Added **44 sources** across `--DCS-Master` (3 mapped under `[Core]` and `[Map]`), `Dcs-Jets` (27: `[a10]`, `[mig15]`, and `[F-5E]` mapped, plus remaining manuals, Chuck's Guides, RAZBAM/AV-8B files, and cross-referenced `DCS_Supercarrier_Operations_Guide_EN.pdf` added to pool pending tag assignment), and `Dcs-Warbirds` (14 official manuals and Chuck's Guides added to pool pending tag assignment).
+- Added `v4.3.md` snapshot and updated rolling `current.md`.
 
-## v2.2 (X2 Structure + Y2 Source Map)
-- Removed notebook IDs from the structure presentation (`X2`), bumping `X` from `1` to `2` while keeping `Y` at `2`.
+### v3.2 (X3 Structure + Y2 Source Map)
+- Added rolling `current.md` file in the repository root, overwritten on every new version push alongside immutable `vX.Y.md` snapshots and append-only `changelog.md` entries (`X` bumped from 2 to 3, `Y` kept at 2).
+- Added `v3.2.md` preserving the v2.2 structure, tag definitions, and Y2 source map.
+
+### v2.2 (X2 Structure + Y2 Source Map)
+- Removed notebook IDs from the structure presentation (`X2`), bumping `X` from 1 to 2 while keeping `Y` at 2.
 - Added `v2.2.md` alongside `v1.2.md` to preserve the previous version snapshot.
 
-## v1.2 (X1 Structure + Y2 Source Map)
+### v1.2 (X1 Structure + Y2 Source Map)
 - Established unified single-file map (`v1.2.md`) combining Structure (`X1`) and Source Mapping (`Y2`).
 - Standardized notebook titles (`--Structure`, `--DCS-Master`, `Dcs-Jets`, `Dcs-Rotary`, `Dcs-Warbirds`, `--3DPrinting-Master`, `3DPrinting-Projectx`, `--Trading-Master`, `--Content-Master`, `Content-projectx`, `--Personal-Master`, `Eve Online`, `Farm Sim 25`).
 - **Source-to-`[tag]` Mapping Rule:** Sources reside in each notebook's collective pool and are paired with `[tag]` categories to scope source selection inside dedicated `[tag]` chats and prevent cross-contamination. `[430] DCS NS 430 Manual EN` is treated as a shared navigation source mapped only to compatible rotary modules (`[hind]`, `[hip]`, `[huey]`, `[gazelle]`).
