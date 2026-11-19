@@ -1,73 +1,136 @@
-# Gemini Notebook Workspace — Structure & Source Map (v3.2)
+# Gemini Notebook Structure Map — v3.2 (X3 Structure + Y2 Source Map)
 
-> **Rolling File Notice:** `current.md` is overwritten on every new version push to reflect the latest active structure and source map. Immutable historical snapshots live in `vX.Y.md` files, and chronological history lives in `changelog.md`.
+> **Rolling File Notice:** `current.md` is overwritten on every version push to reflect the latest active structure and source map. Immutable historical snapshots remain in `vX.Y.md` files, and chronological history is appended in `changelog.md`.
 
 - **Active Version:** `v3.2` (`X = 3` Structure, `Y = 2` Source Map)
 - **Repository:** `https://github.com/RedFoxFOMO/Google-Notebook-Structure` (`main`)
-- **Last Updated:** 2026-11-19
 
-## Versioning Rules (`vX.Y`)
-- **`X` (Structure):** Notebook hierarchy, `--` master hubs, sub-notebooks, `[tag]` definitions, and presentation/file structure.
-- **`Y` (Source Map):** Which sources live in each notebook's collective pool and which `[tag]` categories or airframes they map to.
-- **Both Increment:** When both structure and source mappings change.
-- **File Policy:** Each version creates a new `vX.Y.md` file (retaining older `vX.Y.md` files) and appends a new section to `changelog.md` (preserving prior entries), while `current.md` is overwritten with the latest version state.
+---
 
-## Naming & Chat Isolation Conventions
-- **Master Hubs:** Prefixed with `--` and formatted as `--Name-Master` with no gaps (e.g., `--Structure`, `--DCS-Master`, `--3DPrinting-Master`, `--Trading-Master`, `--Content-Master`, `--Personal-Master`).
-- **Sub-Notebooks:** No gaps, first letter capitalized after hyphens (e.g., `Dcs-Jets`, `Dcs-Rotary`, `Dcs-Warbirds`, `3DPrinting-Projectx`, `Content-projectx`). Proper names keep their natural spacing and casing (e.g., `Eve Online`, `Farm Sim 25`).
-- **Chat Source Isolation:** Sources sit in each notebook's collective pool; create dedicated chats per `[tag]` in the notebook interface and toggle only that `[tag]`'s sources active to avoid cross-contamination.
+## X3 — Notebook Structure
 
-## Notebook Hierarchy, `[tag]` Purposes & Source Map (Baseline from v2.2)
+### 1. Master Hubs & Categories (Sidebar Organization)
+- --Structure
+  - --DCS-Master
+    - Dcs-Jets
+    - Dcs-Rotary
+    - Dcs-Warbirds
+  - --3DPrinting-Master
+    - 3DPrinting-Projectx
+  - --Trading-Master
+  - --Content-Master
+    - Content-projectx
+  - --Personal-Master
+- Eve Online
+- Farm Sim 25
+- *Rolling Current State File:* `current.md` (overwritten on each new version push alongside `vX.Y.md` snapshots and `changelog.md`)
 
-### `--DCS-Master`
-- `[Core]` — Global gameplay rules, GUI, options, and settings.
-- `[Map]` — Theater terrain guides and navigation references.
-- `[VR]` — Headset optimization and OpenXR performance tuning.
-- `[Editor]` — Mission Editor triggers, units, and scripting.
-- `[Mod]` — User-mods, mod manager rules, and liveries.
+### 2. DCS Ecosystem & Module Tags
+- **--DCS-Master:**
+  - `[Core]` — Global gameplay rules, GUI, options, and settings.
+  - `[Map]` — Theater terrain guides and navigation references.
+  - `[VR]` — Headset optimization, pixel density, and OpenXR performance tuning.
+  - `[Editor]` — Mission Editor triggers, units, and Hoggit scripting documentation.
+  - `[Mod]` — User-mod directories, OVGME/JSGME manager rules, and custom liveries.
 
-### `Dcs-Jets`
-Airframe module `[tag]`s and intended document pairs (Official Flight Manual + Chuck's Guide where applicable):
-- `[fa18]` — F/A-18C Hornet (ED Official Flight Manual + Chuck's Hornet Guide)
-- `[f14]` — F-14 Tomcat (ED Manual + Chuck's Tomcat Guide)
-- `[a10]` — A-10C (ED Manual + Chuck's Warthog Guide)
-- `[su25t]` — Su-25T Frogfoot (ED Manual)
-- `[su25]` — Su-25A Frogfoot (ED Manual)
-- `[mig19]` — MiG-19P Farmer (ED Manual + Chuck's Guide)
-- `[mig21]` — MiG-21bis Fishbed (ED Manual + Chuck's Guide)
-- `[m2000]` — Mirage 2000C (ED Manual + Chuck's Guide)
-- `[f1]` — Mirage F1 (ED Manual + Chuck's Guide)
-- `[av8b]` — AV-8B Night Attack (ED Manual + Chuck's Guide)
-- `[f4e]` — F-4E Phantom II (ED Manual + Chuck's Guide)
-- `[a4e]` — A-4E-C Skyhawk (Community Mod Docs)
+- **Dcs-Jets:**
+  - `[fa18]` — F/A-18C Hornet
+  - `[f14]` — F-14 Tomcat
+  - `[a10]` — A-10C (Free / Base Version)
+  - `[su25t]` — Su-25T Frogfoot (Free Advanced Anti-Tank Version)
+  - `[su25]` — Su-25A Frogfoot (Paid / Flaming Cliffs Classic Version)
+  - `[mig19]` — MiG-19P Farmer
+  - `[mig21]` — MiG-21bis Fishbed
+  - `[m2000]` — Mirage 2000C
+  - `[f1]` — Mirage F1
+  - `[av8b]` — AV-8B Night Attack
+  - `[f4e]` — F-4E Phantom II
+  - `[F-86F]` — F-86F Sabre
+  - `[a4e]` — A-4E-C Skyhawk (Community Mod)
 
-### `Dcs-Rotary`
-Airframe module `[tag]`s and intended document pairs:
-- `[apache]` — AH-64D Apache (ED Official Manual + Chuck's Apache Guide)
-- `[blackshark3]` — Ka-50 Black Shark 3 (ED Official Manual + Chuck's Ka-50 Guide)
-- `[hind]` — Mi-24P Hind (ED Official Manual + Chuck's Hind Guide)
-- `[hip]` — Mi-8MTV2 Hip (ED Official Manual; no standalone Chuck's Guide)
-- `[huey]` — UH-1H Huey (ED Official Manual)
-- `[gazelle]` — SA342 Gazelle (ED / Steam Manual + Chuck's Gazelle Guide)
-- `[chinook]` — CH-47F Chinook (ED Early Access Guide)
+- **Dcs-Rotary:**
+  - `[apache]` — AH-64D Apache
+  - `[blackshark3]` — Ka-50 Black Shark 3
+  - `[hind]` — Mi-24P Hind
+  - `[hip]` — Mi-8MTV2 Hip
+  - `[huey]` — UH-1H Huey
+  - `[gazelle]` — SA342 Gazelle
+  - `[chinook]` — CH-47F Chinook
 
-### `Dcs-Warbirds`
-Airframe module `[tag]`s and intended document pairs:
-- `[mustang]` — P-51D Mustang (ED Official Manual + Chuck's Mustang Guide)
-- `[109]` — Bf 109 K-4 (ED Official Manual + Chuck's Guide)
-- `[anton]` — Fw 190 A-8 Anton (ED Official Manual + Chuck's Guide)
-- `[dora]` — Fw 190 D-9 Dora (ED Official Manual + Chuck's Guide)
-- `[thunderbolt]` — P-47D Thunderbolt (ED Official Manual + Chuck's Guide)
-- `[spitfire]` — Spitfire LF Mk. IX (ED Official Manual + Chuck's Guide)
-- `[mosquito]` — Mosquito FB VI (ED Official Manual + Chuck's Guide)
+- **Dcs-Warbirds:**
+  - `[mustang]` — P-51D Mustang
+  - `[109]` — Bf 109 K-4
+  - `[anton]` — Fw 190 A-8 Anton
+  - `[dora]` — Fw 190 D-9 Dora
+  - `[thunderbolt]` — P-47D Thunderbolt
+  - `[spitfire]` — Spitfire LF Mk. IX
+  - `[mosquito]` — Mosquito FB VI
 
-### Other Tracked Notebooks
-- `--Structure` — Tracks workspace structure, naming conventions, `[tag]` definitions, and version/source-map tracking.
-- `--Trading-Master` — Tracked master hub (detailed `[tag]` scope to be added as defined).
-- `--Personal-Master` — Tracked master hub (detailed `[tag]` scope to be added as defined).
-- `--Content-Master` — Tracked master hub (detailed `[tag]` scope to be added as defined).
-- `--3DPrinting-Master` — Tracked master hub (detailed `[tag]` scope to be added as defined).
-- `Eve Online` — Sub-notebook / proper-name workspace (detailed `[tag]` scope to be added as defined).
-- `Farm Sim 25` — Sub-notebook / proper-name workspace (detailed `[tag]` scope to be added as defined).
-- `3DPrinting-Projectx` — Sub-notebook (detailed `[tag]` scope to be added as defined).
-- `Content-projectx` — Sub-notebook (detailed `[tag]` scope to be added as defined).
+### 3. Non-DCS Master Hub Tag Definitions
+- **--3DPrinting-Master:**
+  - `[£]` — Monetization, pricing strategies, and commercial selling guides
+  - `[Resin]` — Resin guides, MSLA printer settings, washing, curing, and safety protocols
+  - `[FDM]` — Filament printing guides, slicer settings, temperatures, and calibration
+  - `[Design]` — CAD workflows, AI tool model creation, and general design advice
+
+- **--Trading-Master:**
+  - `[CAFE]` — The Trader Cafe items (x9 core references and discussions)
+  - `[ORB]` — Specific Opening Range Breakout strategy notes and execution rules
+  - `[SPORT]` — Area group of trading strategies and market observations
+
+- **--Content-Master:**
+  - `[YT]` — YouTube advice, video optimization, and channel strategy
+  - `[Insta]` — Instagram guides, reels, and engagement tactics
+  - `[Web]` — Website development, hosting, and traffic optimization
+  - `[Ai]` — AI tool guides and workflows specifically for YouTube, Instagram, or website creation
+
+- **--Personal-Master:**
+  - `[Private]` — Confidential personal notes and records
+  - `[Misc]` — General personal reference guides and miscellaneous items
+
+---
+
+## Y2 — Source Map & Airframe Tag Links
+
+### Root & Master Hubs
+- **--Structure:** `DCS Notebook Structure and Sources` (chat), `Workspace v1.3` (chat)
+- **--DCS-Master:** `Chuck's Guides - Main Index`, `DCS World VR Optimization Guide` (chat), `DCS_User_Manual_EN_2020.pdf`
+- **--3DPrinting-Master:** `Anycubic Photon Mono Print Settings` (chat), `Centauri Carbon Slicer Settings Guide` (chat)
+- **--Trading-Master:** 26 sources across `[CAFE]`, `[ORB]`, `[SPORT]`, and general trading/pattern references
+- **--Content-Master:** `Foxy Redfox Social Media Profiles` (chat)
+- **--Personal-Master:** 7 chat sources across `[Private]` / `[Misc]`
+
+### Dcs-Jets
+- `[fa18]` — *Pending manuals/guides* | *Pool chat:* `F/A-18 Information Request Clarification`
+- `[f14]` — *Pending manuals/guides* | *Pool chat:* `F-14 Tomcat Query Clarification`
+- `[a10]` — *Pending manuals/guides*
+- `[su25t]` — *Pending ED manual* | *Pool chat:* `Su-25T Cold Start Guide`
+- `[su25]` — *Pending ED manual* | *Pool chat:* `Su-25 Cold Start Checklist`
+- `[mig19]` — *Pending manuals/guides* | *Pool chat:* `MiG-19 Information Assistance`
+- `[mig21]` — *Pending manuals/guides* | *Pool chat:* `MiG-21bis Cold Start Checklist`
+- `[m2000]` — *Pending manuals/guides* | *Pool chat:* `Mirage 2000C Cold Start Guide`
+- `[f1]` — *Pending manuals/guides* | *Pool chat:* `Clarifying Mirage F1 Query`
+- `[av8b]` — *Pending manuals/guides* | *Pool chat:* `AV-8B Harrier II Cold Start`
+- `[f4e]` — *Pending manuals/guides* | *Pool chat:* `F-4E Phantom II Cold Start`
+- `[F-86F]` — *Pending manuals/guides* | *Pool chat:* `F-86F Sabre Cold Start Checklist`
+- `[a4e]` — *Pending community mod docs* | *Pool chat:* `DCS A-4E-C Skyhawk Startup Guide`
+- *Additional pool chat:* `DCS Tiger II Notes Support`
+
+### Dcs-Rotary — Complete (24 Sources)
+- `[apache]` — `[Apache] Chuck's Guides - DCS AH-64D Apache Guide PDF`, `[Apache] DCS: AH-64D Flight Manual EN`, `[Apache]` *(chat)*
+- `[blackshark3]` — `[BlackShark3] Chuck's Guides - DCS Ka-50 Black Shark PDF`, `[Blackshark3] DCS Black Shark 3 Flight Manual (EN)`, `[BlackShark3]` *(chat)*
+- `[hind]` — `[Hind] Chuck's Guides - Mi-24P Hind Guide PDF`, `[Hind] DCS Mi-24P Quick Start Manual EN (Translated)`, `[Hind] DCS Mi-24P Translated Manual EN`, `[Hind]` *(chat)* | *NS 430 overlay:* `[430] DCS NS 430 Manual EN`
+- `[hip]` — `[Hip] Chuck's Guides - DCS Mi-8MTV2 Guide PDF`, `[Hip] DCS Mi-8MTV2 Flight Manual EN`, `[Hip]` *(chat)* | *NS 430 nav/cockpit:* `[430] DCS NS 430 Manual EN`
+- `[huey]` — `[Huey] Chuck's Guides - DCS UH-1H Huey Guide PDF`, `[Huey] DCS UH-1H Flight Manual EN`, `[Huey]` *(chat)* | *NS 430 overlay:* `[430] DCS NS 430 Manual EN`
+- `[gazelle]` — `[Gazelle] Chuck's Guides - DCS SA-342 Gazelle Guide PDF`, `[Gazelle] Steam Manual - SA342 Gazelle`, `[Gazelle] Steam Quickref - SA342 Gazelle`, `[Gazelle]` *(chat)* | *NS 430 nav/cockpit:* `[430] DCS NS 430 Manual EN`
+- `[chinook]` — `[Chinook] DCS CH-47F Early Access Guide EN`, `[Chinook]` *(chat)*
+- *Shared Rotary Pool Sources:* `[430] DCS NS 430 Manual EN` *(applicable to `[hind]`, `[hip]`, `[huey]`, `[gazelle]`)*, `DCS World Helicopter Modules Breakdown` *(chat)*
+
+### Dcs-Warbirds
+- `[mustang]`, `[109]`, `[anton]`, `[dora]`, `[thunderbolt]`, `[spitfire]`, `[mosquito]` — *0 sources loaded; pending manuals and Chuck's Guides*
+
+### Projectx & Standalone Gaming Notebooks
+- **3DPrinting-Projectx** — *1 source in pool; pending mapping*
+- **Content-projectx** — *2 sources in pool; pending mapping*
+- **Eve Online** — *0 sources loaded*
+- **Farm Sim 25** — *10 sources in pool; pending mapping*
